@@ -17,18 +17,18 @@ function Decrypt(Encrypted, key) {
     return Decrypted;
 }
 
-//The Key should be entered here
+//The Key(q) should be entered here
 function EncryptPassword() {
     const Password = document.getElementById("Password").value;
-    const key = 7;
+    const key = q;
     const Encrypted = Encrypt(Password, key);
     document.getElementById("Encrypted").textContent = Encrypted;
 }
 
-//Use the same Key here as well
+//Use the same Key(q) here as well
 function DecryptPassword() {
     const Encrypted = document.getElementById("Encrypted").textContent;
-    const key = 7;
+    const key = q;
     const Decrypted = Decrypt(Encrypted, key);
     document.getElementById("Decrypted").textContent = Decrypted;
 }
